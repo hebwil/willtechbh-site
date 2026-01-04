@@ -16,10 +16,10 @@
         * { font-family: 'Inter', sans-serif; }
         html { scroll-behavior: smooth; }
         
-        /* COR DA FUSÃO: Fundo idêntico ao do teu ficheiro logo.jpg */
+        /* COR DA FUSÃO */
         .bg-logo-blend { background-color: #050a14; }
 
-        /* Gradiente do Topo: Começa na cor da logo e desce para o azul */
+        /* Gradiente do Topo */
         .gradient-hero {
             background: linear-gradient(180deg, #050a14 0%, #1e3a8a 100%);
         }
@@ -42,7 +42,7 @@
             <div class="flex flex-col items-center justify-center">
                 
                 <a href="#" class="mb-8 transform hover:scale-105 transition duration-300">
-                    <img src="imagem/logo.jpg" alt="WillTechBH" class="h-48 md:h-80 w-auto object-contain">
+                    <img src="img/logo.jpg" alt="WillTechBH" class="h-48 md:h-80 w-auto object-contain">
                 </a>
                 
                 <div class="hidden md:flex space-x-8 items-center bg-slate-800/50 px-10 py-4 rounded-full border border-slate-700 backdrop-blur-sm">
@@ -115,7 +115,7 @@
             <h2 class="text-4xl font-bold mb-8 text-slate-800">Sobre a WillTechBH</h2>
             <div class="bg-white p-8 md:p-12 rounded-xl shadow-xl border-l-4 border-blue-600 text-left">
                 <p class="text-lg text-gray-700 leading-relaxed mb-6">
-                    A <strong class="text-blue-700">WillTechBH</strong> destaca-se pela transparência e qualidade técnica em Contagem e BH. Nossa missão é prolongar a vida útil dos seus dispositivos com diagnósticos precisos.
+                    A <strong class="text-blue-700">WillTechBH</strong> destaca-se pela transparência e qualidade técnica em Contagem e BH. Nossa missão é prolongar a vida útil dos seus dispositivos.
                 </p>
             </div>
         </div>
@@ -145,6 +145,7 @@
                 <h3 class="text-2xl font-bold mb-6 text-slate-700">Mensagem Direta</h3>
                 <form action="https://formsubmit.co/willtechbh@gmail.com" method="POST" class="space-y-4">
                     <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_next" value="https://willtechbh.com.br">
                     <input type="text" name="nome" placeholder="Seu Nome" required class="w-full p-3 border rounded border-gray-300">
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                         <input type="email" name="email" placeholder="Seu E-mail (Obrigatório)" required class="w-full p-3 border rounded border-gray-300">
@@ -160,15 +161,15 @@
     <section class="py-16 bg-slate-900 text-center text-white">
         <h3 class="text-3xl font-bold mb-10">Soluções que Transformam</h3>
         <div class="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 px-4">
-            <img src="imagem/banner-MAC.jpg" alt="Mac" class="rounded-lg shadow-lg border border-slate-700 w-full h-auto hover:scale-105 transition duration-300">
-            <img src="imagem/banner-PC.jpg" alt="PC" class="rounded-lg shadow-lg border border-slate-700 w-full h-auto hover:scale-105 transition duration-300">
-            <img src="imagem/banner-TI.jpg" alt="TI" class="rounded-lg shadow-lg border border-slate-700 w-full h-auto hover:scale-105 transition duration-300">
-            <img src="imagem/banner-VENDA.jpg" alt="Vendas" class="rounded-lg shadow-lg border border-slate-700 w-full h-auto hover:scale-105 transition duration-300">
+            <img src="img/banner-MAC.jpg" alt="Mac" class="rounded-lg shadow-lg border border-slate-700 w-full h-auto hover:scale-105 transition duration-300">
+            <img src="img/banner-PC.jpg" alt="PC" class="rounded-lg shadow-lg border border-slate-700 w-full h-auto hover:scale-105 transition duration-300">
+            <img src="img/banner-TI.jpg" alt="TI" class="rounded-lg shadow-lg border border-slate-700 w-full h-auto hover:scale-105 transition duration-300">
+            <img src="img/banner-VENDA.jpg" alt="Vendas" class="rounded-lg shadow-lg border border-slate-700 w-full h-auto hover:scale-105 transition duration-300">
         </div>
     </section>
 
     <footer class="bg-black text-white py-10 text-center">
-        <img src="imagem/logo.jpg" alt="Logo" class="h-24 mx-auto mb-4 object-contain opacity-80 hover:opacity-100 transition">
+        <img src="img/logo.jpg" alt="Logo" class="h-24 mx-auto mb-4 object-contain opacity-80 hover:opacity-100 transition">
         <p class="text-slate-500 text-sm">© 2026 WillTechBH - Todos os direitos reservados.</p>
     </footer>
 
