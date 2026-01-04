@@ -1,3 +1,15 @@
+Entendido! Faz todo sentido, já que agora temos os botões grandes e visíveis logo abaixo, não precisa repetir no menu lá em cima.
+
+**O que eu fiz:**
+
+1. **Menu Superior (Desktop):** Removi o botão azul "Agendar". Agora ficaram apenas os links limpos: *Início, Serviços, Sobre, Contato*.
+2. **Menu Mobile:** Também removi o link duplicado de lá.
+3. **Mantive os 3 Botões Principais:** Agendar, WhatsApp e Ligar Agora continuam firmes na tela inicial.
+4. **Pasta de Imagens:** Mantive como `imagem/` (baseado no seu GitHub).
+
+Aqui está o código final limpo:
+
+```html
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -42,17 +54,14 @@
             <div class="flex flex-col items-center justify-center">
                 
                 <a href="#" class="mb-8 transform hover:scale-105 transition duration-300">
-                    <img src="img/logo.jpg" alt="WillTechBH" class="h-48 md:h-80 w-auto object-contain">
+                    <img src="imagem/logo.jpg" alt="WillTechBH" class="h-48 md:h-80 w-auto object-contain">
                 </a>
                 
-                <div class="hidden md:flex space-x-8 items-center bg-slate-800/50 px-10 py-4 rounded-full border border-slate-700 backdrop-blur-sm">
+                <div class="hidden md:flex space-x-10 items-center bg-slate-800/50 px-12 py-4 rounded-full border border-slate-700 backdrop-blur-sm">
                     <a href="#inicio" class="text-gray-300 hover:text-white font-medium text-lg transition hover:underline decoration-blue-500 underline-offset-4">Início</a>
                     <a href="#servicos" class="text-gray-300 hover:text-white font-medium text-lg transition hover:underline decoration-blue-500 underline-offset-4">Serviços</a>
                     <a href="#sobre" class="text-gray-300 hover:text-white font-medium text-lg transition hover:underline decoration-blue-500 underline-offset-4">Sobre</a>
                     <a href="#contato" class="text-gray-300 hover:text-white font-medium text-lg transition hover:underline decoration-blue-500 underline-offset-4">Contato</a>
-                    <a href="https://calendly.com/willtechbh" target="_blank" class="bg-blue-600 text-white px-6 py-2 rounded-full font-bold hover:bg-blue-500 transition shadow-lg ml-6">
-                        <i class="fas fa-calendar-alt mr-2"></i>Agendar
-                    </a>
                 </div>
                 
                 <button id="mobile-menu-btn" class="md:hidden absolute right-4 top-10 text-white text-3xl">
@@ -65,7 +74,6 @@
                 <a href="#servicos" class="block text-gray-300 hover:text-white font-medium text-lg">Serviços</a>
                 <a href="#sobre" class="block text-gray-300 hover:text-white font-medium text-lg">Sobre</a>
                 <a href="#contato" class="block text-gray-300 hover:text-white font-medium text-lg">Contato</a>
-                <a href="https://calendly.com/willtechbh" class="block text-blue-400 font-bold text-lg">Agendar Visita</a>
             </div>
         </div>
     </nav>
@@ -170,15 +178,15 @@
     <section class="py-16 bg-slate-900 text-center text-white">
         <h3 class="text-3xl font-bold mb-10">Soluções que Transformam</h3>
         <div class="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 px-4">
-            <img src="img/banner-MAC.jpg" alt="Mac" class="rounded-lg shadow-lg border border-slate-700 w-full h-auto hover:scale-105 transition duration-300">
-            <img src="img/banner-PC.jpg" alt="PC" class="rounded-lg shadow-lg border border-slate-700 w-full h-auto hover:scale-105 transition duration-300">
-            <img src="img/banner-TI.jpg" alt="TI" class="rounded-lg shadow-lg border border-slate-700 w-full h-auto hover:scale-105 transition duration-300">
-            <img src="img/banner-VENDA.jpg" alt="Vendas" class="rounded-lg shadow-lg border border-slate-700 w-full h-auto hover:scale-105 transition duration-300">
+            <img src="imagem/banner-MAC.jpg" alt="Mac" class="rounded-lg shadow-lg border border-slate-700 w-full h-auto hover:scale-105 transition duration-300">
+            <img src="imagem/banner-PC.jpg" alt="PC" class="rounded-lg shadow-lg border border-slate-700 w-full h-auto hover:scale-105 transition duration-300">
+            <img src="imagem/banner-TI.jpg" alt="TI" class="rounded-lg shadow-lg border border-slate-700 w-full h-auto hover:scale-105 transition duration-300">
+            <img src="imagem/banner-VENDA.jpg" alt="Vendas" class="rounded-lg shadow-lg border border-slate-700 w-full h-auto hover:scale-105 transition duration-300">
         </div>
     </section>
 
     <footer class="bg-black text-white py-10 text-center">
-        <img src="img/logo.jpg" alt="Logo" class="h-24 mx-auto mb-4 object-contain opacity-80 hover:opacity-100 transition">
+        <img src="imagem/logo.jpg" alt="Logo" class="h-24 mx-auto mb-4 object-contain opacity-80 hover:opacity-100 transition">
         <p class="text-slate-500 text-sm">© 2026 WillTechBH - Todos os direitos reservados.</p>
     </footer>
 
@@ -189,3 +197,5 @@
     </script>
 </body>
 </html>
+
+```
