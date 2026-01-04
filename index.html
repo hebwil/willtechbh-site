@@ -1,3 +1,16 @@
+Com certeza. Analisei os prints do seu GitHub e encontrei o problema exato.
+
+**O Problema:**
+Nas imagens que você enviou do seu GitHub, dá para ver que o arquivo `index.html` está na **pasta principal** (raiz), mas as imagens estão guardadas dentro de uma pasta chamada **`imagem`**.
+
+O código atual está procurando as fotos soltas junto com o site, mas elas estão guardadas "em uma gaveta". Precisamos dizer ao código para abrir essa gaveta.
+
+**A Solução:**
+Temos que mudar o endereço das imagens no código de `src="logo.jpg"` para `src="imagem/logo.jpg"`.
+
+Aqui está o seu código **HTML Corrigido** com os caminhos certos para a pasta `imagem`:
+
+```html
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
