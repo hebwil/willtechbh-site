@@ -27,7 +27,7 @@
         .card-hover { transition: all 0.3s ease; }
         .card-hover:hover { transform: translateY(-8px); box-shadow: 0 20px 40px rgba(0,0,0,0.15); }
         
-        /* Navbar Normal (Sobe com a página para não cobrir o conteúdo) */
+        /* Navbar Normal */
         .nav-header {
             background-color: #050a14;
             position: relative;
@@ -145,12 +145,12 @@
                 <h3 class="text-2xl font-bold mb-6 text-slate-700">Mensagem Direta</h3>
                 <form action="https://formsubmit.co/willtechbh@gmail.com" method="POST" class="space-y-4">
                     <input type="hidden" name="_captcha" value="false">
-                    <input type="text" name="nome" placeholder="Seu Nome" required class="w-full p-3 border rounded">
+                    <input type="text" name="nome" placeholder="Seu Nome" required class="w-full p-3 border rounded border-gray-300">
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                        <input type="email" name="email" placeholder="Seu E-mail (Obrigatório)" required class="w-full p-3 border rounded">
-                        <input type="tel" name="telefone" placeholder="Seu WhatsApp (Obrigatório)" required class="w-full p-3 border rounded">
+                        <input type="email" name="email" placeholder="Seu E-mail (Obrigatório)" required class="w-full p-3 border rounded border-gray-300">
+                        <input type="tel" name="telefone" placeholder="Seu WhatsApp (Obrigatório)" required class="w-full p-3 border rounded border-gray-300">
                     </div>
-                    <textarea name="mensagem" rows="3" placeholder="Como podemos ajudar?" required class="w-full p-3 border rounded"></textarea>
+                    <textarea name="mensagem" rows="3" placeholder="Como podemos ajudar?" required class="w-full p-3 border rounded border-gray-300"></textarea>
                     <button type="submit" class="w-full bg-blue-600 text-white py-3 rounded font-bold hover:bg-blue-700 transition">Enviar Agora</button>
                 </form>
             </div>
@@ -160,15 +160,15 @@
     <section class="py-16 bg-slate-900 text-center text-white">
         <h3 class="text-3xl font-bold mb-10">Soluções que Transformam</h3>
         <div class="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 px-4">
-            <img src="imagem/banner-MAC.jpg" alt="Mac" class="rounded-lg shadow-lg border border-slate-700">
-            <img src="imagem/banner-PC.jpg" alt="PC" class="rounded-lg shadow-lg border border-slate-700">
-            <img src="imagem/banner-TI.jpg" alt="TI" class="rounded-lg shadow-lg border border-slate-700">
-            <img src="imagem/banner-VENDA.jpg" alt="Vendas" class="rounded-lg shadow-lg border border-slate-700">
+            <img src="imagem/banner-MAC.jpg" alt="Mac" class="rounded-lg shadow-lg border border-slate-700 w-full h-auto hover:scale-105 transition duration-300">
+            <img src="imagem/banner-PC.jpg" alt="PC" class="rounded-lg shadow-lg border border-slate-700 w-full h-auto hover:scale-105 transition duration-300">
+            <img src="imagem/banner-TI.jpg" alt="TI" class="rounded-lg shadow-lg border border-slate-700 w-full h-auto hover:scale-105 transition duration-300">
+            <img src="imagem/banner-VENDA.jpg" alt="Vendas" class="rounded-lg shadow-lg border border-slate-700 w-full h-auto hover:scale-105 transition duration-300">
         </div>
     </section>
 
     <footer class="bg-black text-white py-10 text-center">
-        <img src="imagem/logo.jpg" alt="Logo" class="h-24 mx-auto mb-4">
+        <img src="imagem/logo.jpg" alt="Logo" class="h-24 mx-auto mb-4 object-contain opacity-80 hover:opacity-100 transition">
         <p class="text-slate-500 text-sm">© 2026 WillTechBH - Todos os direitos reservados.</p>
     </footer>
 
