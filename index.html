@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="WillTechBH - Assistência Técnica de Informática. Especialistas em MacBook, Notebooks e TI Corporativo.">
     <title>WillTechBH - Soluções em Tecnologia</title>
-
+    
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-
+    
     <style>
         * { font-family: 'Inter', sans-serif; }
         html { scroll-behavior: smooth; }
@@ -17,41 +17,144 @@
         .gradient-hero { background: linear-gradient(180deg, #050a14 0%, #1e3a8a 100%); }
         .card-hover { transition: all 0.3s ease; }
         .card-hover:hover { transform: translateY(-8px); box-shadow: 0 20px 40px rgba(0,0,0,0.15); }
-        .nav-header { background-color: #050a14; border-bottom: 1px solid #1e293b; }
+        .nav-header { background-color: #050a14; position: relative; border-bottom: 1px solid #1e293b; }
     </style>
 </head>
-
 <body class="bg-slate-50">
 
-<nav class="nav-header shadow-2xl">
-    <div class="container mx-auto px-4 py-8 text-center">
-        <img src="imagem/logo.jpg" alt="WillTechBH" class="h-48 md:h-80 mx-auto mb-8">
-    </div>
-</nav>
+    <nav class="nav-header shadow-2xl">
+        <div class="container mx-auto px-4 py-8">
+            <div class="flex flex-col items-center justify-center">
+                <a href="#" class="mb-8 transform hover:scale-105 transition duration-300">
+                    <img src="imagem/logo.jpg" alt="WillTechBH" class="h-48 md:h-80 w-auto object-contain">
+                </a>
+                <div class="hidden md:flex space-x-10 items-center bg-slate-800/50 px-12 py-4 rounded-full border border-slate-700 backdrop-blur-sm">
+                    <a href="#inicio" class="text-gray-300 hover:text-white font-medium text-lg transition hover:underline decoration-blue-500 underline-offset-4">Início</a>
+                    <a href="#servicos" class="text-gray-300 hover:text-white font-medium text-lg transition hover:underline decoration-blue-500 underline-offset-4">Serviços</a>
+                    <a href="#sobre" class="text-gray-300 hover:text-white font-medium text-lg transition hover:underline decoration-blue-500 underline-offset-4">Sobre</a>
+                    <a href="#contato" class="text-gray-300 hover:text-white font-medium text-lg transition hover:underline decoration-blue-500 underline-offset-4">Contato</a>
+                </div>
+                <button id="mobile-menu-btn" class="md:hidden absolute right-4 top-10 text-white text-3xl">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+            <div id="mobile-menu" class="hidden md:hidden mt-6 pb-4 space-y-4 border-t border-slate-800 pt-6 text-center bg-logo-blend">
+                <a href="#inicio" class="block text-gray-300 hover:text-white font-medium text-lg">Início</a>
+                <a href="#servicos" class="block text-gray-300 hover:text-white font-medium text-lg">Serviços</a>
+                <a href="#sobre" class="block text-gray-300 hover:text-white font-medium text-lg">Sobre</a>
+                <a href="#contato" class="block text-gray-300 hover:text-white font-medium text-lg">Contato</a>
+            </div>
+        </div>
+    </nav>
 
-<section id="inicio" class="gradient-hero text-white py-20 text-center">
-    <h1 class="text-4xl md:text-6xl font-extrabold mb-6">
-        Tecnologia que <span class="text-blue-400">Impulsiona</span>
-    </h1>
-    <p class="text-xl md:text-2xl mb-8 text-slate-300">
-        Assistência Técnica Especializada Apple, PC e TI Corporativo em Contagem e BH.
-    </p>
-</section>
+    <section id="inicio" class="gradient-hero text-white py-20">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-6xl font-extrabold mb-6 tracking-tight">Tecnologia que <span class="text-blue-400">Impulsiona</span></h1>
+            <p class="text-xl md:text-2xl mb-8 text-slate-300 font-light">Assistência Técnica Especializada Apple, PC e TI Corporativo em Contagem e BH.</p>
+            <div class="flex flex-row flex-wrap gap-4 justify-center items-center">
+                <a href="https://calendly.com/willtechbh" target="_blank" class="bg-white text-slate-900 px-6 py-4 rounded-lg font-bold hover:bg-gray-100 transition shadow-lg border-2 border-transparent hover:border-blue-500 text-sm md:text-base">
+                    <i class="fas fa-calendar-check mr-2 text-blue-600"></i>Agendar
+                </a>
+                <a href="https://wa.me/553131817600" target="_blank" class="bg-blue-600 text-white px-6 py-4 rounded-lg font-bold hover:bg-blue-500 transition shadow-lg text-sm md:text-base">
+                    <i class="fab fa-whatsapp mr-2"></i>WhatsApp
+                </a>
+                <a href="tel:+553131817600" class="bg-green-600 text-white px-6 py-4 rounded-lg font-bold hover:bg-green-500 transition shadow-lg text-sm md:text-base">
+                    <i class="fas fa-phone-alt mr-2"></i>Ligar Agora
+                </a>
+            </div>
+        </div>
+    </section>
 
-<section class="py-16 bg-slate-900 text-center text-white">
-    <h3 class="text-3xl font-bold mb-10">Soluções que Transformam</h3>
-    <div class="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 px-4">
-        <img src="imagem/banner-MAC.jpg" alt="Mac">
-        <img src="imagem/banner-PC.jpg" alt="PC">
-        <img src="imagem/banner-TI.jpg" alt="TI">
-        <img src="imagem/banner-VENDA.jpg" alt="Vendas">
-    </div>
-</section>
+    <section id="servicos" class="py-20 bg-white">
+        <div class="container mx-auto px-4 text-center mb-16">
+            <h2 class="text-3xl md:text-5xl font-bold mb-4 text-slate-800">Nossas Especialidades</h2>
+            <div class="w-24 h-1 bg-blue-600 mx-auto rounded-full"></div>
+        </div>
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 px-4">
+            <div class="bg-slate-50 p-8 rounded-xl border card-hover text-center">
+                <i class="fab fa-apple text-5xl mb-4 text-slate-700"></i>
+                <h3 class="text-2xl font-bold mb-2">Apple Specialist</h3>
+                <p class="text-gray-600">Reparos em MacBook Pro, Air e iMac.</p>
+            </div>
+            <div class="bg-slate-50 p-8 rounded-xl border card-hover text-center">
+                <i class="fas fa-laptop-medical text-5xl mb-4 text-blue-600"></i>
+                <h3 class="text-2xl font-bold mb-2">PC & Notebooks</h3>
+                <p class="text-gray-600">Formatação, Upgrades e Manutenção Geral.</p>
+            </div>
+            <div class="bg-slate-50 p-8 rounded-xl border card-hover text-center">
+                <i class="fas fa-network-wired text-5xl mb-4 text-cyan-500"></i>
+                <h3 class="text-2xl font-bold mb-2">Redes & TI</h3>
+                <p class="text-gray-600">Suporte para empresas e Wi-Fi Corporativo.</p>
+            </div>
+        </div>
+    </section>
 
-<footer class="bg-black text-white py-10 text-center">
-    <img src="imagem/logo.jpg" alt="Logo" class="h-24 mx-auto mb-4 opacity-80">
-    <p class="text-slate-500 text-sm">© 2026 WillTechBH - Todos os direitos reservados.</p>
-</footer>
+    <section id="sobre" class="py-20 bg-slate-100">
+        <div class="container mx-auto px-4 max-w-5xl text-center">
+            <h2 class="text-4xl font-bold mb-8 text-slate-800">Sobre a WillTechBH</h2>
+            <div class="bg-white p-8 md:p-12 rounded-xl shadow-xl border-l-4 border-blue-600 text-left">
+                <p class="text-lg text-gray-700 leading-relaxed mb-6">
+                    A <strong class="text-blue-700">WillTechBH</strong> destaca-se pela transparência e qualidade técnica em Contagem e BH. Nossa missão é prolongar a vida útil dos seus dispositivos.
+                </p>
+            </div>
+        </div>
+    </section>
 
+    <section id="contato" class="py-20 bg-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold mb-12 text-slate-800">Canais de Atendimento</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12 max-w-4xl mx-auto">
+                <a href="#" target="_blank" class="bg-slate-50 border p-6 rounded-xl card-hover group">
+                    <i class="fas fa-map-marker-alt text-4xl text-blue-600 mb-4 group-hover:scale-110 transition"></i>
+                    <h3 class="font-bold">Onde Estamos</h3>
+                    <p class="text-gray-600 text-sm">Contagem, BH e Betim</p>
+                </a>
+                <a href="https://wa.me/553131817600" target="_blank" class="bg-blue-50 border p-6 rounded-xl card-hover group">
+                    <i class="fab fa-whatsapp text-4xl text-green-500 mb-4 group-hover:scale-110 transition"></i>
+                    <h3 class="font-bold">WhatsApp</h3>
+                    <p class="text-gray-600 text-sm">3181-7600</p>
+                </a>
+                <div class="bg-slate-50 border p-6 rounded-xl card-hover">
+                    <i class="fas fa-clock text-4xl text-slate-600 mb-4"></i>
+                    <h3 class="font-bold text-sm">Seg-Sex: 07:30-18:30<br>Sáb: 08:00-13:00</h3>
+                </div>
+            </div>
+            <div class="bg-slate-50 rounded-xl p-8 shadow-inner border max-w-4xl mx-auto">
+                <h3 class="text-2xl font-bold mb-6 text-slate-700">Mensagem Direta</h3>
+                <form action="https://formsubmit.co/willtechbh@gmail.com" method="POST" class="space-y-4">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_next" value="https://willtechbh.com.br">
+                    <input type="text" name="nome" placeholder="Seu Nome" required class="w-full p-3 border rounded border-gray-300">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <input type="email" name="email" placeholder="Seu E-mail (Obrigatório)" required class="w-full p-3 border rounded border-gray-300">
+                        <input type="tel" name="telefone" placeholder="Seu WhatsApp (Obrigatório)" required class="w-full p-3 border rounded border-gray-300">
+                    </div>
+                    <textarea name="mensagem" rows="3" placeholder="Como podemos ajudar?" required class="w-full p-3 border rounded border-gray-300"></textarea>
+                    <button type="submit" class="w-full bg-blue-600 text-white py-3 rounded font-bold hover:bg-blue-700 transition">Enviar Agora</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-slate-900 text-center text-white">
+        <h3 class="text-3xl font-bold mb-10">Soluções que Transformam</h3>
+        <div class="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 px-4">
+            <img src="imagem/banner-MAC.jpg" alt="Mac" class="rounded-lg shadow-lg border border-slate-700 w-full h-auto hover:scale-105 transition duration-300">
+            <img src="imagem/banner-PC.jpg" alt="PC" class="rounded-lg shadow-lg border border-slate-700 w-full h-auto hover:scale-105 transition duration-300">
+            <img src="imagem/banner-TI.jpg" alt="TI" class="rounded-lg shadow-lg border border-slate-700 w-full h-auto hover:scale-105 transition duration-300">
+            <img src="imagem/banner-VENDA.jpg" alt="Vendas" class="rounded-lg shadow-lg border border-slate-700 w-full h-auto hover:scale-105 transition duration-300">
+        </div>
+    </section>
+
+    <footer class="bg-black text-white py-10 text-center">
+        <img src="imagem/logo.jpg" alt="Logo" class="h-24 mx-auto mb-4 object-contain opacity-80 hover:opacity-100 transition">
+        <p class="text-slate-500 text-sm">© 2026 WillTechBH - Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        document.getElementById('mobile-menu-btn').onclick = () => {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        }
+    </script>
 </body>
 </html>
